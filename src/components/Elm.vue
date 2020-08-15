@@ -52,6 +52,7 @@
             <el-breadcrumb-item v-for="item in routlist" :key="item" style="line-height:50px">{{ item }}</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
+        <div style="display:flex">
           <el-dropdown>
             <span class="el-dropdown-link">
               {{username}}
@@ -70,6 +71,7 @@
               </div>
             </el-col>
           </el-row>
+          </div>
         </el-header>
 
         <!-- 主体 -->
@@ -251,9 +253,7 @@ body > .el-container {
   justify-content: space-between;
 }
 
-.el-dropdown {
-  margin-left: 800px;
-}
+
 .font_i {
   font-size: 30px;
   margin-left: 100px;
